@@ -2,11 +2,15 @@
 <html>
 
   <head>
-    <title> {{foo}} </title>
+    <title> Authentication </title>
   </head>
 
   <body>
 	<center><h2>{{message}}</h2></center>
+	<br>
+	{% if message != "SUCCESS" %}
+		<center><a href= "/login">Go Back to Login</a></center>
+	{% endif %}
   </body>
 
 </html>
