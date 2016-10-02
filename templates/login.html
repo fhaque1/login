@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Login </title>
+  </head>
+
+  <body>
+	<center><h2>LOGIN</h2></center>
+	<center>{{message}}</center>
+	<br>
+	<form action="/authenticate" method = "POST">
+		<center><input type = "text" name = "user" placeholder = "Username"></center>
+		<br>
+		<br>
+		<center><input type = "password" name = "pswrd" placeholder = "Password"></center>
+		<br>
+		<center><input type= "submit" value= "Login"></center>
+		<br>
+		<center>Don't Have An Account? Click <a href= "/register">Here</a> to Register</center>
+	</form>
+  </body>
+
+</html>
