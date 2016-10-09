@@ -2,22 +2,31 @@
 <html>
 
   <head>
-    <title> Login </title>
+    <title> Homepage </title>
   </head>
 
   <body>
-	<center><h2>LOGIN</h2></center>
+	<center><h2>WELCOME</h2></center>
 	<center>{{message}}</center>
-	<br>
+	<center><h4>Login<h4><center>
 	<form action="/authenticate" method = "POST">
 		<center><input type = "text" name = "user" placeholder = "Username"></center>
-		<br>
 		<br>
 		<center><input type = "password" name = "pswrd" placeholder = "Password"></center>
 		<br>
 		<center><input type= "submit" value= "Login"></center>
 		<br>
-		<center>Don't Have An Account? Click <a href= "/register">Here</a> to Register</center>
+	</form>
+	<br>
+	<center><h4>Register<h4><center>
+	<form action="/makeAccount" method = "POST">
+		<center><input type = "text" name = "newuser" placeholder = "Make a Username"></center>
+		<br>
+		<center><input type = "password" name = "newpswrd" placeholder = "Make a Password"></center>
+		<br>
+		<center><input type = "password" name = "renewpswrd" placeholder = "Please Retype Password"></center>
+		<br>
+		<center><input type= "submit" value= "Register"></center>
 	</form>
   </body>
 
